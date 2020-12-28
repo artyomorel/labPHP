@@ -15,45 +15,34 @@
 	switch($operator){
 		case '+':
 			$res=$num1+$num2;
+            echo "<p>Результат: $num1 $operator $num2 = <strong>$res</strong></p>";
 			break;
 		case '-':
 			$res=$num1-$num2;
+            echo "<p>Результат: $num1 $operator $num2 = <strong>$res</strong></p>";
 			break;
 		case '*':
 			$res=$num1*$num2;
+            echo "<p>Результат: $num1 $operator $num2 = <strong>$res</strong></p>";
 			break;
 		case '/':
 			if($num2==0){
-			    $res="a";
+                echo "<p>Делить на 0 нельзя</p>";
 				break;
 		    }
 			else{
 				$res=$num1/$num2;
+                echo "<p>Результат: $num1 $operator $num2 = <strong>$res</strong></p>";
 				break;
 			}
 		default:
-			$res="w";
+			"</p>Неизвестный оператор </p>";
 			break;
 		}
 	}
 }
-?>
 
 
-
-
-<?php
-/*
-ЗАДАНИЕ 2
-- Если результат существует, выведите его
-*/
-if(isset($num1)&&isset($num2))
-if(($res!="a")&&($res!="w"))
-echo "<p>Результат: $num1 $operator $num2 = <strong>$res</strong></p>";
-elseif($res=="a")
-echo "<p>Делить на 0 нельзя</p>";
-elseif ($res=="w")
-echo "</p>Неизвестный оператор </p>'$operator'";
 ?>
 
 <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="POST">
