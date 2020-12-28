@@ -24,5 +24,7 @@ CREATE TABLE msgs (
 ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci";
 if (mysqli_query($link, $sql) === true){
     echo 'Структура базы данных успешно создана!';
+}else{
+    echo "<h3>База уже была создана</h3>";
 }
 mysqli_close($link);

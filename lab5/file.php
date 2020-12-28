@@ -21,6 +21,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		fwrite($owf,$str);
 		fclose($owf);
 	}
+	header('location: /lab5/file.php');
+    exit();
 	//header("Location: http://www.center.ogu/~fm160478/PHP/Lab5/file1.php");
 }
 ?>

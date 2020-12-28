@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		move_uploaded_file($_FILES['fupload']['tmp_name'], $uploadfile);
 		$s="upload/".$ru;
 // 		$_FILES['fupload']['name'];
-		echo "<img src=$s >";
+        echo "<img  src=$s width='189' height='255' >";
 	}
 	}
 }

@@ -212,6 +212,27 @@
     <tbody>
       <tr>
         <td>1</td>
+        <td>Cookie</td>
+        <td><a href="/lab6/cookie.php">Click</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Session</td>
+         <td><a href="/lab6/session/page1.php">Click</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Номер задания</th>
+        <th>Название</th>
+        <th>Ссылка</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
         <td>CreateDB</td>
         <td><a href="/lab7/createdb.php">Click</a></td>
       </tr>

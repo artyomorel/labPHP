@@ -69,7 +69,10 @@ $sql3="DELETE `msgs`
        FROM `msgs`
        WHERE `msgs`.`id`=$ids";
 mysqli_query($link,$sql3) or die(mysqli_error($link));
+header('location: /lab7/gbook.php');
+    exit();
 }
+
 }
 ?>
 
@@ -80,7 +83,7 @@ mysqli_query($link,$sql3) or die(mysqli_error($link));
 Ваше имя:<br>
 <input type="text" name="name"><br>
 Ваш E-mail:<br>
-<input type="text" name="email"><br>
+<input type="email" name="email"><br>
 Сообщение:<br>
 <textarea name="msg" cols="50" rows="5"></textarea><br>
 <br>
