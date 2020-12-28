@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 $s=trim(htmlspecialchars($_POST['subject']));
 $b=trim(htmlspecialchars($_POST['body']));
-if(mail("artyom.orel@yandex.ru",$s,$b,"From: artyom.orel@yandex.ru"))
+if(mail("wsrogu2019@gmail.com",$s,$b,"From: artyom.orel@yandex.ru"))
 echo "Письмо отправлено";
 }
  ?>
